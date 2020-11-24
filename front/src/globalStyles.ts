@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0px;
     margin: 0px;
     background: #24292E;
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
     display: flex;
     justify-content: center;

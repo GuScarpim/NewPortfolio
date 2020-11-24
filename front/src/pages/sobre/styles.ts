@@ -3,36 +3,15 @@ import styled from 'styled-components';
 export const Container = styled.div`
     font-family: 'Zilla Slab', serif;
     color: #FFF;
-
-  .parent {
-    display: grid;
-    grid-template-columns: 0.6fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-
-  .div1 { 
-    height: 100vh;
-    grid-area: 1 / 1 / 2 / 2;
-  }
-
-  .div2 { 
-    height: 100vh;
-    width: 100%;
-    background: orange;
-    max-width: 300px;
-    grid-area: 1 / 2 / 2 / 3;
-  }
-
+    padding-top: 400px;
 `
 
-export const ContentPerfil = styled.div`
+export const Perfil = styled.div`
   background: #31363F;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  margin-top: -100px;
   padding: 20px;
 
   img {
@@ -40,12 +19,36 @@ export const ContentPerfil = styled.div`
     height: 260px;
     border-radius: 20px;
   }
+
+  label { 
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+  }
+`
+
+export const Icons = styled.div`
+  width: 100%;
+/* 4A4D51 */
+`
+
+
+export const Description = styled.div`
+    background: #31363F;
+    max-width: 800px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 30px;
 `
 
 export const Content = styled.div`
-  background: #000;
   display: flex;
   justify-content: center;
-  width: 70vw;
-  
+  width: 100%;
+  padding: 20px;
 `
