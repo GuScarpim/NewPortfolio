@@ -38,15 +38,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: Helvetica;
     padding: 0px;
     margin: 0px;
-    background: #000;
-    width: 100vw;
+    background: #24292E;
+    width: 95vw;
     height: 100vh;
-    overflow-x: hidden;
-
-    @media only screen and (max-width: 1435px) {
-      overflow-x: hidden;
-      overflow-y: auto;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `
 
