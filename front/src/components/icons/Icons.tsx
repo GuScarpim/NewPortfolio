@@ -1,8 +1,6 @@
 import React from 'react';
 import * as S from './styles';
 
-import GitHub from '../../assets/github.svg';
-
 export default function Icons() {
   return (
     <S.ContentIcon>
