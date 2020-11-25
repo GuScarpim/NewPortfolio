@@ -2,21 +2,56 @@ import styled from 'styled-components';
 
 export const ContentIcon = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  max-width: 200px;
-  padding: 20px;
+  max-width: 260px;
   transition: all 1s;
+
+.tooltip {
+  position: relative;
+  transition: all 1s;
+}
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 `
 export const CardIcon = styled.div`
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
-  background: #4A4D51;
+  border-radius: 10px;
+  background: #FFF;
   transition: all 0.2s;
-  margin-left: 22px;
   cursor: pointer;
+  margin: 20px 10px 0px 10px;
+
+  img {
+    width: 35px;
+    height: 35px;
+    border-radius: 0px;
+  }
+
+  &:hover {
+    transition: all 0.2s;
+    margin-top: 18px;
+  }
 `
