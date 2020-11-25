@@ -20,7 +20,7 @@ export const Perfil = styled.div`
     border-radius: 20px;
   }
 
-  label { 
+  label {
     width: 100%;
     text-align: center;
     font-size: 26px;
@@ -51,4 +51,44 @@ export const Content = styled.div`
   justify-content: center;
   width: 100%;
   padding: 20px;
+`
+
+export const ContentMe = styled.div`
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: 30px;
+  color: #64d2f2;
+
+  span {
+    font-size: 18px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+
+    @media (prefers-reduced-motion: no-preference) {
+        animation: App-logo-spin infinite 20s linear;
+    }
+
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+`
+
+export const Skills = styled.div`
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
 `
