@@ -35,15 +35,20 @@ export default function Sobre() {
         </S.Perfil>
 
         <S.Description>
-          3 - Hello World
-          3 - Hello World
-          3 - Hello World
-          3 - Hello World
-          3 - Hello World
-          3 - Hello World
-          3 - Hello World
-          3 - Hello World
-          3 - Hello World
+          <h2><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px" /> Olá,
+            meu nome é <b>Gustavo Scarpim</b> !
+          </h2>
+
+          <p>
+            Tenho 21 anos, moro na cidade de São Paulo - Capital, cursando o 6º semestre de <b>Ciência da Computação</b> na
+            Universidade Cruzeiro do Sul.
+
+          <p>
+            Apaixonado por tecnologia, arte, xadrez e música, obtive uma boa afinidade com a área da programação.
+            Sou <b>desenvolvedor FrontEnd</b> com muito orgulho, enxadrista e músico.
+          </p>
+
+          </p>
 
         </S.Description>
 

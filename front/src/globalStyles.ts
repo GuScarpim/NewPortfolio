@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  input, button, textarea { 
-    font-family: 'Zilla Slab', serif;
+  input, button, textarea {
+    font-family: 'Zilla Slab';
   }
 
   ::-webkit-scrollbar {
@@ -35,7 +35,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Helvetica;
     padding: 0px;
     margin: 0px;
     background: #24292E;

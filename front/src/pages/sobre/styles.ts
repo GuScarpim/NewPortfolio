@@ -1,9 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Zilla Slab';
     color: #FFF;
     padding-top: 400px;
+
+    animation: show .5s cubic-bezier(.1,.82,.25,1);
+
+    @keyframes show {
+      0% {
+        transform: scale(1.4);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
 `
 
 export const Perfil = styled.div`
@@ -31,19 +44,6 @@ export const Perfil = styled.div`
 export const Icons = styled.div`
   width: 100%;
 /* 4A4D51 */
-`
-
-
-export const Description = styled.div`
-    background: #31363F;
-    max-width: 800px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 20px;
-    margin-left: 30px;
 `
 
 export const Content = styled.div`
@@ -91,4 +91,34 @@ export const Skills = styled.div`
   width: 100%;
   text-align: center;
   margin-top: 100px;
+`
+
+export const Description = styled.div`
+    background: #31363F;
+    max-width: 800px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 30px;
+
+    h2 {
+      font-size: 2rem;
+      b {
+        color: #64D2F2;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      font-family: 'Helvetica';
+      font-weight: 100 !important;
+
+      b {
+        color: #64D2F2;
+      }
+    }
 `
