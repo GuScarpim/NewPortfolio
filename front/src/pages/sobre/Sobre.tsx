@@ -2,6 +2,8 @@ import React from 'react';
 import * as S from './styles';
 
 import ReactIcon from '../../assets/react.svg';
+import Xadrez from '../../assets/xadrez.svg';
+import Musico from '../../assets/trompete.svg';
 
 import Icons from '../../components/icons/Icons';
 import Skills from '../../components/skills/Skills';
@@ -35,18 +37,37 @@ export default function Sobre() {
         </S.Perfil>
 
         <S.Description>
-          <h2><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px" /> Olá,
-            meu nome é <b>Gustavo Scarpim</b> !
+          <h2><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px" alt="Gif olá" /> Olá,
+            meu nome é <b>Gustavo Scarpim</b>!
           </h2>
 
           <p>
             Tenho 21 anos, moro na cidade de São Paulo - Capital, cursando o 6º semestre de <b>Ciência da Computação</b> na
             Universidade Cruzeiro do Sul.
 
-          <p>
-            Apaixonado por tecnologia, arte, xadrez e música, obtive uma boa afinidade com a área da programação.
-            Sou <b>desenvolvedor FrontEnd</b> com muito orgulho, enxadrista e músico.
+            <p>
+              Apaixonado por tecnologia, arte, xadrez e música, obtive uma boa afinidade com a área da programação.
+              Sou <b>desenvolvedor FrontEnd</b> com muito orgulho, <img src={Xadrez} alt="Xadrez" width="20px" /> enxadrista
+              , <img src={Musico} alt="Musico" width="20px" /> e músico.
+            </p>
           </p>
+
+          <h2>Histórico profissional</h2>
+
+          <p>
+            Iniciei na programação em 2016 com alguns cursos da internet, no ano de 2018 dei inicio na faculdade de <b>Ciência da
+            computação</b>, aprendi muita coisa na faculdade e nos cursos que realizei por fora também, logo em 2019 consegui o
+            meu primeiro estágio na área de <b>desenvolvimento</b> na empresa <b>ABBC</b> do ramo financeiro.
+
+            <p>
+              No estágio eu trabalhei com desenvolvimento <b>FrontEnd e Backend</b>, utilizando as liguanges ReactJs, NodeJs, Javascript, C#,
+              .Net Core, SQL e Mongo DB. As minhas principais atividades dentro da empresa eram criar <b>sistemas web</b> para melhorias na parte
+              interna de dentro da empresa.
+            </p>
+
+            <p>
+              No fim do meu estágio em 2020, fui para uma agência chamada <b>Hyst</b> também do ramo financeiro, atuando como <b>Desenvolvedor FrontEnd</b>
+            </p>
 
           </p>
 
