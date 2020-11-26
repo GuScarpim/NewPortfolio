@@ -10,12 +10,15 @@ export const ContentIcon = styled.div`
 .tooltip {
   position: relative;
   transition: all 1s;
+  display: flex;
+  align-items: center;
 }
+
 .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
-  color: #fff;
+  color: #242c34;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -23,9 +26,21 @@ export const ContentIcon = styled.div`
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  bottom: 100%;
+  bottom: 140%;
   left: 50%;
+  background: #f3f3f3;
   margin-left: -60px;
+
+  &::after {
+    content: "";
+    left: 50px;
+    bottom: -8px;
+    z-index: 9999;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f3f3f3;
+  }
 }
 
 .tooltip:hover .tooltiptext {

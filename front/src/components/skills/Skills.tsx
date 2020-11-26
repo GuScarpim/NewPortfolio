@@ -34,27 +34,31 @@ import Windows from '../../assets/windows.svg';
 import Yarn from '../../assets/yarn.svg';
 
 interface Ifigure {
-  [icons: string]: any
+  [icons: string]: any,
+  name: string,
 }
 
 export default function Skills() {
 
   const [skills, setSkills] = useState<Ifigure[]>([
-    { icons: ReactIcon }, { icons: Typescript }, { icons: Html }, { icons: Css }, { icons: Javascript }, { icons: Bootstrap },
-    { icons: Materialize }, { icons: Material }, { icons: Sass }, { icons: Node }, { icons: Angular }, { icons: Vue },
-    { icons: Java }, { icons: Sql }, { icons: Mongo }, { icons: Mysql }, { icons: Redux }, { icons: Git },
-    { icons: GitHub }, { icons: Npm }, { icons: Yarn }, { icons: Ubuntu }, { icons: Linux }, { icons: Windows }, { icons: Azure },
-    { icons: Cmd }, { icons: Trello }, { icons: Code }, { icons: Responsive }, { icons: Brave },
+    { icons: ReactIcon, name: 'ReactJs' }, { icons: Typescript, name: 'TypeScript' }, { icons: Html, name: 'Html' }, { icons: Css, name: 'Css' },
+    { icons: Javascript, name: 'Javascript' }, { icons: Bootstrap, name: 'Bootstrap' }, { icons: Materialize, name: 'Materialize' },
+    { icons: Material, name: 'Material Ui' }, { icons: Sass, name: 'Sass' }, { icons: Node, name: 'NodeJs' }, { icons: Angular, name: 'AngularJs' },
+    { icons: Vue, name: 'VueJs' }, { icons: Java, name: 'Java' }, { icons: Sql, name: 'SQL' }, { icons: Mongo, name: 'Mongo DB' },
+    { icons: Mysql, name: 'Mysql' }, { icons: Redux, name: 'Redux' }, { icons: Git, name: 'Git' }, { icons: GitHub, name: 'GitHub' }, { icons: Npm, name: 'Npm' },
+    { icons: Yarn, name: 'Yarn' }, { icons: Ubuntu, name: 'Ubuntu' }, { icons: Linux, name: 'Linux' }, { icons: Windows, name: 'Windows' },
+    { icons: Azure, name: 'Azure' }, { icons: Cmd, name: 'Cmd' }, { icons: Trello, name: 'Trello' }, { icons: Code, name: 'VS Code' },
+    { icons: Responsive, name: 'Responsive' }, { icons: Brave, name: 'Brave' },
   ])
 
   return (
     <S.ContentIcon>
       {skills.map((item, index) => (
         <S.CardIcon key={index}>
-          {/* <div className="tooltip"> */}
+          <div className="tooltip">
             <img src={item.icons} alt="Icones" />
-            {/* <span className="tooltiptext">Tooltip text</span> */}
-          {/* </div> */}
+            <span className="tooltiptext">{item.name}</span>
+          </div>
         </S.CardIcon>
       ))}
     </S.ContentIcon>
