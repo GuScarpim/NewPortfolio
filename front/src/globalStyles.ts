@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar {
     width: 6px;
-    background-color: #CCCCCC;
+    background-color: #2e2e2e;
     -webkit-border-radius: 0px;
   }
   ::-webkit-scrollbar:hover {
@@ -15,23 +15,22 @@ const GlobalStyle = createGlobalStyle`
   }
   ::-webkit-scrollbar-thumb:vertical {
     -webkit-border-radius: 0px;
-    background: #CCCCCC;
+    background: #2e2e2e;
   }
   ::-webkit-scrollbar-thumb:vertical:active {
     -webkit-border-radius: 0px;
-    background: #CCCCCC;
+    background: #2e2e2e;
   }
   ::-webkit-scrollbar {
     width: 7px;
     height: 8px;
-    background-color: #CCCCCC
+    background-color: #CCC
   }
   ::-webkit-scrollbar:hover {
-    background-color: #CCCCCC;
+    background-color: #CCC;
   }
   ::-webkit-scrollbar-thumb:vertical {
-    -webkit-border-radius: 0px;
-    background: #CCCCCC;
+    background: #2e2e2e;
   }
 
   body {
@@ -39,10 +38,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0px;
     background: #24292E;
     width: 95vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* height: 100vh; */
+    /* display: flex; */
+    /* align-items: center; */
   }
 `
 

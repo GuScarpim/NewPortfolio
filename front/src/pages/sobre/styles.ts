@@ -4,8 +4,9 @@ export const Container = styled.div`
     font-family: 'Zilla Slab';
     color: #FFF;
     padding-top: 400px;
-
     animation: show .5s cubic-bezier(.1,.82,.25,1);
+    justify-content: center;
+    width: 95vw;
 
     @keyframes show {
       0% {
@@ -26,6 +27,7 @@ export const Perfil = styled.div`
   border-radius: 20px;
   margin-top: -100px;
   padding: 20px;
+  max-height: 1200px;
 
   img {
     width: 260px;
@@ -97,7 +99,8 @@ export const Description = styled.div`
     background: #31363F;
     max-width: 800px;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -108,6 +111,14 @@ export const Description = styled.div`
       font-size: 2rem;
       b {
         color: #64D2F2;
+      }
+
+      &:nth-child(3) {
+        margin-top: 5px;
+      }
+
+      &:nth-child(5) {
+        margin-top: 5px;
       }
     }
 
@@ -121,4 +132,18 @@ export const Description = styled.div`
         color: #64D2F2;
       }
     }
+`
+
+export const Footer = styled.div` 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #31363F;
+  height: 40px;
+  position: absolute;
+
+  img {
+    width: 30px;
+    height: 20px;
+  }
 `
