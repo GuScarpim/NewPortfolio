@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface INav {
   open: boolean;
+  href?: string;
 }
 
 export const StyledBurger = styled.div<INav>`
@@ -43,12 +44,12 @@ export const StyledBurger = styled.div<INav>`
 export const Nav = styled.nav`
   font-family: 'Zilla Slab';
   height: 70px;
-  border-bottom: 2px solid #f1f1f1;
-  /* padding: 0 20px; */
+  border-bottom: 2px solid #ffffff;
   display: flex;
   justify-content: space-between;
-  background-color: #0000005c;
+  background-color: #31363F;
   align-items: center;
+
   span {
     font-size: 30px;
     @media only screen and (max-width: 600px) {
@@ -63,8 +64,17 @@ export const Nav = styled.nav`
     margin-left: 20px;
     display: flex;
     justify-content: flex-start;
-    width: 100vw;
+    align-items: center;
+    width: 95vw;
     color: #FFF;
+
+    span {
+      font-size: 24px;
+      background: -webkit-linear-gradient(90deg, rgba(100,210,242,0.5662640056022409) 0%, rgba(100,210,242,1) 60%, rgba(100,220,242,0.6951155462184874) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
      @media only screen and (max-width: 600px) {
       margin-left: -33px;
       margin-top: 37px;
@@ -82,11 +92,36 @@ export const Ul = styled.ul<INav>`
   top: 0;
   justify-content: flex-end;
   margin-top: 0px;
+  align-items: center;
+  font-size: 18px;
+  height: 67px;
+  margin-left: 20px;
+
   a {
     text-decoration: none;
     text-transform: none;
     color: #FFF;
+
+    &:nth-child(1) {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      border-bottom: 4px solid #64d2f2;
+      color: #64d2f2;
+    }
   }
+
+    .LinkHome {
+      border-bottom: ${(props) => props.href === '/' ? '4px solid #64d2f2' : ''};
+      color: ${(props) => props.href === '/' ? '#64d2f2' : ''};
+    }
+
+    .LinkProjetos {
+      border-bottom: ${(props) => props.href === 'projetos' || props.href ===  '/projetos' ? '4px solid #64d2f2' : ''};
+      color: ${(props) => props.href === 'projetos' || props.href ===  '/projetos' ? '#64d2f2' : ''};
+    }
+
   button {
     font-size: 16px;
     cursor: pointer;
@@ -96,14 +131,16 @@ export const Ul = styled.ul<INav>`
     text-transform: none;
     color: #FFF;
   }
+
   li {
     padding: 18px 10px;
   }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #0D2538;
     position: fixed;
-    transform: ${(props) => props.open  ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${(props) => props.open ? 'translateX(0)' : 'translateX(100%)'};
     top: -16px;
     right: 0;
     height: 100%;

@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
     background-color: #2e2e2e;
     -webkit-border-radius: 0px;
   }
@@ -22,8 +22,7 @@ const GlobalStyle = createGlobalStyle`
     background: #2e2e2e;
   }
   ::-webkit-scrollbar {
-    width: 7px;
-    height: 8px;
+    width: 9px;
     background-color: #CCC
   }
   ::-webkit-scrollbar:hover {
