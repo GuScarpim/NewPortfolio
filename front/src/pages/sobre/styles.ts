@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
     font-family: 'Zilla Slab';
     color: #FFF;
-    padding-top: 400px;
+    padding-top: 140px;
     animation: show .5s cubic-bezier(.1,.82,.25,1);
     justify-content: center;
+    position: relative;
     width: 95vw;
 
     @keyframes show {
@@ -132,18 +133,4 @@ export const Description = styled.div`
         color: #64D2F2;
       }
     }
-`
-
-export const Footer = styled.div` 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #31363F;
-  height: 40px;
-  position: absolute;
-
-  img {
-    width: 30px;
-    height: 20px;
-  }
 `

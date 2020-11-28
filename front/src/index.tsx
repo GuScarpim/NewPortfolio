@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './globalStyles';
 
+import NavBar from './components/menu/Navbar';
 import Sobre from './pages/sobre/Sobre';
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
-    <Sobre />
+    <NavBar />
   </React.StrictMode>,
   document.getElementById('root')
 );

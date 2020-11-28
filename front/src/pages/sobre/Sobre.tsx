@@ -14,7 +14,6 @@ export default function Sobre() {
     <>
       <S.Container>
         <S.Content>
-
           <S.Perfil>
             <img alt="Gustavo Scarpim"
               src="https://avatars1.githubusercontent.com/u/47616551?s=460&u=f9f81df034252d349d5c631a85cd57ea603beefa&v=4" />
