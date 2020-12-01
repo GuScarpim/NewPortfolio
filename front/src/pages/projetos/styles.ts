@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface Iclass {
   mobile?: '',
+  width?: '',
 }
 
 export const Container = styled.div`
@@ -14,6 +15,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 40px 20px 0px 20px;
 
     @keyframes show {
       0% {
@@ -95,14 +97,14 @@ export const Card = styled.div<Iclass>`
     img {
       border-radius: 10px;
       height: 370px;
-      width: 555px;
+      width: ${(props) => props.width !== '' ? `${props.width}px` : '555px'};
       box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
     }
   }
 `
 
 
-export const CardReverse = styled.div`
+export const CardReverse = styled.div<Iclass>`
     height: 485px;
     max-width: 1170px;
     width: 100%;
@@ -131,7 +133,7 @@ export const CardReverse = styled.div`
     img {
       border-radius: 10px;
       height: 370px;
-      width: 555px;
+      width: ${(props) => props.width !== '' ? `${props.width}px` : '555px'};
       box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
     }
   }
