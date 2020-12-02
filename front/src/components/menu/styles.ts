@@ -74,11 +74,6 @@ export const Nav = styled.nav`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-     @media only screen and (max-width: 600px) {
-      margin-left: -33px;
-      margin-top: 37px;
-    }
   }
 `
 
