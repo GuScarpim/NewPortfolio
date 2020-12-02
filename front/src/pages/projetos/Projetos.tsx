@@ -19,26 +19,26 @@ function Projetos() {
   const [href, setHref] = useState<string>("");
   const [projects, setProjects] = useState<Iproject[]>([
     {
+      title: 'Meu primeiro Portfólio',
+      description: 'Esse foi o meu primeiro portfólio desenvolvido para mostrar o meu trabalho e falar um pouco sobre mim. O portfólio foi desenvolvido utilizando as linguagens <b>ReactJS</b> com <b>Styled Components</b>.',
+      linkGithub: 'https://github.com/GuScarpim/Portfolio',
+      linkProjeto: 'https://guscarpim.github.io/Portfolio/',
+      linkGif: 'https://raw.githubusercontent.com/GuScarpim/Portfolio/master/src/assets/portfolio.gif',
+      width: '',
+      reverse: false,
+    },
+    {
       title: 'Clone do WhatsApp',
       description: 'Esse projeto foi desenvolvido para demonstrar como fazer um clone do WhatsApp utilizando as linguagens <b>ReactJs</b>, <b>Typescript</b> com <b>Styled Components</b>.',
       linkGithub: 'https://github.com/GuScarpim/Clone_WhatsApp',
       linkProjeto: 'https://github.com/GuScarpim/Clone_WhatsApp',
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Clone_WhatsApp/main/front/src/Assets/gif.gif',
       width: '',
-      reverse: false,
-    },
-    {
-      title: 'Portfólio antigo',
-      description: 'Esse projeto foi desenvolvido para demonstrar como fazer um clone do WhatsApp utilizando as linguagens <b>ReactJs</b>, <b>Typescript</b> com <b>Styled Components</b>.',
-      linkGithub: 'https://github.com/GuScarpim/Portfolio',
-      linkProjeto: 'https://guscarpim.github.io/Portfolio/',
-      linkGif: 'https://raw.githubusercontent.com/GuScarpim/Portfolio/master/src/assets/portfolio.gif',
-      width: '',
       reverse: true,
     },
     {
       title: 'Buscar Cep React',
-      description: '',
+      description: 'Buscar Cep foi uma idéia que eu tive quando eu comecei a programar em ReactJs, nele foi feito <b>consumo de API</b>, <b>Select dinâmico</b> e populando dados dentro do select e também da <b>tabela</b>. Eu fiz esse projeto porque, percebi que muita gente que está começando com <b>React</b> teve dificuldade com essas coisas, e esse projeto foi desenvolvido para ajudar alguém que esteja com dúvidas com algum desses itens.',
       linkGithub: 'https://github.com/GuScarpim/BuscarCep-React',
       linkProjeto: 'https://guscarpim.github.io/BuscarCep-React/index',
       linkGif: 'https://user-images.githubusercontent.com/47616551/73510308-742b5480-43c0-11ea-995e-cfed2c876874.gif',
@@ -47,7 +47,7 @@ function Projetos() {
     },
     {
       title: 'Filmes KRS',
-      description: '',
+      description: 'Esse foi um desafio de uma empresa chamada <b>KRS</b>, o desafio era criar um sistema de locadora onde era possível, cadastrar, editar, excluir e visualizar filmes, além de desenvolver o <b>Front</b> com <b>ReactJs</b> eu também desenvolvi uma <b>API</b> utilizando <b>NodeJS</b> com <b>MongoDB</b> para fazer as funcionalidades do Crud.',
       linkGithub: 'https://github.com/GuScarpim/Filmes_KRS',
       linkProjeto: 'https://github.com/GuScarpim/Filmes_KRS',
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Filmes_KRS/master/web/src/assets/locadora.gif',
@@ -56,7 +56,7 @@ function Projetos() {
     },
     {
       title: 'Private Route React',
-      description: '',
+      description: 'Private Route é um projeto desenvolvido por mim desde o <b>Backend</b> utilizando <b>NodeJs</b> com <b>MongoDB</b> até o <b>Front</b> utilizando <b>ReactJS</b>',
       linkGithub: 'https://github.com/GuScarpim/React-Login-PrivateRoute',
       linkProjeto: 'https://github.com/GuScarpim/React-Login-PrivateRoute',
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/React-Login-PrivateRoute/master/myapp/src/img/ReactLoginGuScarpim.gif',
