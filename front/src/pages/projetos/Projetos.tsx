@@ -65,7 +65,7 @@ function Projetos() {
     },
     {
       title: 'Vue Search Repos',
-      description: '',
+      description: 'Esse projeto foi desenvolvido em <b>VueJs</b> consumindo uma <b>API</b> do <b>GitHub</b>, esse projeto é para mostrar como fazer uma requisição para pesquisar usuarios e os seus repositórios do <b>GitHub</b> utilizando VueJS.',
       linkGithub: 'https://github.com/GuScarpim/Vue_Search_Repos',
       linkProjeto: 'https://guscarpim.github.io/Vue_Search_Repos/',
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Vue_Search_Repos/master/src/assets/vue.gif',
@@ -74,7 +74,7 @@ function Projetos() {
     },
     {
       title: '.Net Core API - AD Group',
-      description: 'API em DotNet Core com autenticação por grupos do AD do windows.',
+      description: 'API em DotNet Core demonstrando uma maneira de fazer autenticação por grupos do AD do windows.',
       linkGithub: 'https://github.com/GuScarpim/.NetCoreAPI_AD_Group',
       linkProjeto: 'https://github.com/GuScarpim/.NetCoreAPI_AD_Group',
       linkGif: 'https://guscarpim.github.io/Portfolio/static/media/api.b92871a7.gif',
@@ -83,7 +83,7 @@ function Projetos() {
     },
     {
       title: 'Buscar Cep React Native',
-      description: '',
+      description: 'Consumindo <b>API</b> de CEP em <b>React Native</b>. Esse projeto foi desenvolvido com <b>EXPO</b> e <b>React Native</b>.',
       linkGithub: 'https://github.com/GuScarpim/Consulta-CEP-React-Native',
       linkProjeto: 'https://github.com/GuScarpim/Consulta-CEP-React-Native',
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Consulta-CEP-React-Native/master/src/img/ReactNativeCep_GustavoScarpim.gif',
@@ -91,8 +91,8 @@ function Projetos() {
       reverse: true,
     },
     {
-      title: '',
-      description: '',
+      title: 'Next Google',
+      description: 'O intuito desse projeto é demonstrar como fazer uma tela de login utilizando a autenticação do <b>Google</b>, além de guardar o <b>Token</b> no <b>Local Storage</b> ele também não permite avançar para a próxima página sem estar logado. Projeto desenvolvido com <b>NextJs</b> e <b>ReactJs</b>.',
       linkGithub: 'https://github.com/GuScarpim/Next_Google_Route_Private',
       linkProjeto: 'https://github.com/GuScarpim/Next_Google_Route_Private',
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Next_Google_Route_Private/master/public/images/next_google.gif',
