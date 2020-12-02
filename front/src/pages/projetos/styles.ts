@@ -2,33 +2,23 @@ import styled from 'styled-components';
 
 interface Iclass {
   mobile?: '',
+  width?: '',
 }
 
 export const Container = styled.div`
     font-family: 'Zilla Slab';
     color: #FFF;
     padding-top: 90px;
-    animation: show .5s cubic-bezier(.1,.82,.25,1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-
-    @keyframes show {
-      0% {
-        transform: scale(1.4);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
+    padding: 40px 20px 0px 20px;
 `
 
 export const Card = styled.div<Iclass>`
-    height: 485px;
+    height: 405px;
     max-width: 1170px;
     width: 100%;
     background: #31363F;
@@ -40,6 +30,30 @@ export const Card = styled.div<Iclass>`
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: "div1 div2";
+
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+    @-webkit-keyframes slide-left {
+      0% {
+        -webkit-transform: translateX(300px);
+                transform: translateX(300px);
+      }
+      100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+      }
+    }
+    @keyframes slide-left {
+      0% {
+        -webkit-transform: translateX(300px);
+                transform: translateX(300px);
+      }
+      100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+      }
+    }
 
   .div1 {
     grid-area: div1;
@@ -94,16 +108,54 @@ export const Card = styled.div<Iclass>`
 
     img {
       border-radius: 10px;
-      height: 370px;
-      width: 555px;
+      height: 300px;
+      width: ${(props) => props.width !== '' ? `${props.width}px` : '100%'};
       box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.7fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "div1" "div2";
+      margin-bottom: 180px;
+
+      .div1 { 
+        grid-area: div1; 
+        margin-top: -25px;
+
+        h1 {
+          font-size: 24px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+      
+      .div2 { 
+        grid-area: div2; 
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        img {
+          border-radius: 10px;
+          height: 280px;
+          width: ${(props) => props.width !== '' ? `${props.width}px` : '100%'};
+          box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+        }
+        
+      }
   }
 `
 
 
-export const CardReverse = styled.div`
-    height: 485px;
+export const CardReverse = styled.div<Iclass>`
+    height: 405px;
     max-width: 1170px;
     width: 100%;
     background: #31363F;
@@ -115,11 +167,35 @@ export const CardReverse = styled.div`
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: "div1 div2";
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    @-webkit-keyframes slide-right {
+      0% {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px);
+      }
+      100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+      }
+    }
+    @keyframes slide-right {
+      0% {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px);
+      }
+      100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+      }
+    }
+
 
   .div2 {
     grid-area: div1;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,8 +206,8 @@ export const CardReverse = styled.div`
 
     img {
       border-radius: 10px;
-      height: 370px;
-      width: 555px;
+      height: 300px;
+      width: ${(props) => props.width !== '' ? `${props.width}px` : '100%'};
       box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
     }
   }
@@ -174,7 +250,43 @@ export const CardReverse = styled.div`
         position: relative;
       }
     }
+  }
 
+   @media only screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.7fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "div3" "div2";
+      margin-bottom: 180px;
+      
+      .div3 {
+        grid-area: div3;
+        margin-top: -25px;
 
+        h1 {
+          font-size: 24px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .div2 {
+        grid-area: div2;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        img {
+          border-radius: 10px;
+          height: 280px;
+          width: ${(props) => props.width !== '' ? `${props.width}px` : '100%'};
+          box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+        }
+        
+      }
   }
 `
