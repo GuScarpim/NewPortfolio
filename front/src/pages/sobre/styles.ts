@@ -19,6 +19,13 @@ export const Container = styled.div`
         opacity: 1;
       }
     }
+
+    @media (max-width: 800px) {
+      justify-content: center;
+      position: relative;
+      width: 95vw;
+      padding: 50px 15px 0px 15px;
+    }
 `
 
 export const Perfil = styled.div`
@@ -42,6 +49,11 @@ export const Perfil = styled.div`
     font-size: 26px;
     margin-top: 10px;
   }
+
+  @media (max-width: 800px) {
+    margin-top: 30px;
+    width: 260px;
+  }
 `
 
 export const Icons = styled.div`
@@ -54,6 +66,11 @@ export const Content = styled.div`
   justify-content: center;
   width: 100%;
   padding: 20px;
+
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
 `
 
 export const ContentMe = styled.div`
@@ -132,5 +149,11 @@ export const Description = styled.div`
       b {
         color: #64D2F2;
       }
+    }
+
+    @media (max-width: 800px) {
+      margin-left: 0px;
+      text-align: center;
+      width: 94%;
     }
 `
