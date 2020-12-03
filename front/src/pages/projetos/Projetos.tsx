@@ -38,7 +38,7 @@ function Projetos() {
     },
     {
       title: 'Buscar Cep React',
-      description: 'Buscar Cep foi uma idéia que eu tive quando eu comecei a programar em ReactJs, nele foi feito <b>consumo de API</b>, <b>Select dinâmico</b> e populando dados dentro do select e também da <b>tabela</b>. Eu fiz esse projeto porque, percebi que muita gente que está começando com <b>React</b> teve dificuldade com essas coisas, e esse projeto foi desenvolvido para ajudar alguém que esteja com dúvidas com algum desses itens.',
+      description: 'Buscar Cep foi uma idéia que eu tive quando comecei a programar em <b>React</b>, nele foi feito <b>consumo de API</b>, e populando dados dentro do <b>select</b> e <b>tabela</b>. Fiz esse projeto porque, percebi que muita gente que está começando a programar em <b>React</b> tem dificuldades com alguma dessas coisas, e deixei esse projeto <b>open source</b> para poder ajudar outros programadores.',
       linkGithub: 'https://github.com/GuScarpim/BuscarCep-React',
       linkProjeto: 'https://guscarpim.github.io/BuscarCep-React/index',
       linkGif: 'https://user-images.githubusercontent.com/47616551/73510308-742b5480-43c0-11ea-995e-cfed2c876874.gif',

@@ -23,7 +23,7 @@ export const StyledBurger = styled.div<INav>`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${(props) => props.open ? '#ccc' : '#333'};
+    background-color: ${(props) => props.open ? '#ccc' : '#FFF'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -139,7 +139,7 @@ export const Ul = styled.ul<INav>`
     top: -16px;
     right: 0;
     height: 100%;
-    width: 300px;
+    width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     z-index: 9;

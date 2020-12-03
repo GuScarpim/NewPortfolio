@@ -30,16 +30,12 @@ export const Footer = styled.div`
     }
   }
 
-
-
-    @keyframes show {
-      0% {
-        transform: scale(1.4);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
+  @media (max-width: 495px) {
+      span {
+      font-size: 13px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+
+  }
 `

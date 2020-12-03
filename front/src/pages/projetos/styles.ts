@@ -120,11 +120,13 @@ export const Card = styled.div<Iclass>`
       grid-template-rows: 0.7fr 1fr;
       gap: 0px 0px;
       grid-template-areas: "div1" "div2";
-      margin-bottom: 180px;
+      margin-bottom: 240px;
+      height: 400px;
 
-      .div1 { 
-        grid-area: div1; 
+      .div1 {
+        grid-area: div1;
         margin-top: -25px;
+        height: 200px;
 
         h1 {
           font-size: 24px;
@@ -134,13 +136,13 @@ export const Card = styled.div<Iclass>`
           font-size: 14px;
         }
       }
-      
-      .div2 { 
-        grid-area: div2; 
+
+      .div2 {
+        grid-area: div2;
         border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
 
         img {
           border-radius: 10px;
@@ -148,9 +150,36 @@ export const Card = styled.div<Iclass>`
           width: ${(props) => props.width !== '' ? `${props.width}px` : '100%'};
           box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
         }
-        
       }
-  }
+    }
+
+    @media only screen and (max-width: 495px) {
+      margin-bottom: 160px;
+      .div1 {
+        h1 {
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+
+        a {
+          font-size: 14px;
+
+          svg {
+            width: 14px;
+          }
+        }
+      }
+
+      .div2 {
+        img {
+          height: 210px;
+        }
+
+      }
+    }
 `
 
 
@@ -252,17 +281,18 @@ export const CardReverse = styled.div<Iclass>`
     }
   }
 
-   @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0.7fr 1fr;
       gap: 0px 0px;
       grid-template-areas: "div3" "div2";
-      margin-bottom: 180px;
-      
+      margin-bottom: 240px;
+
       .div3 {
         grid-area: div3;
         margin-top: -25px;
+        height: 200px;
 
         h1 {
           font-size: 24px;
@@ -276,9 +306,9 @@ export const CardReverse = styled.div<Iclass>`
       .div2 {
         grid-area: div2;
         border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
 
         img {
           border-radius: 10px;
@@ -286,7 +316,27 @@ export const CardReverse = styled.div<Iclass>`
           width: ${(props) => props.width !== '' ? `${props.width}px` : '100%'};
           box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
         }
-        
+
       }
-  }
+    }
+
+    @media only screen and (max-width: 495px) {
+      margin-bottom: 160px;
+      .div3 {
+        h1 {
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+      }
+
+      .div2 {
+        img {
+          height: 210px;
+        }
+
+      }
+    }
 `
