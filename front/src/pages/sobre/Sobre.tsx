@@ -85,7 +85,7 @@ export default function Sobre() {
 
             <p>
                 Além de estudar eu curto uma "partidinha" de <b>Xadrez</b> e já participei de diversos torneios.
-              Aprendi muito cedo a tocar um instrumento chamado <i><b>eufônio</b></i> e desde então, sempre que posso estou praticando e tocando ele.
+              Aprendi muito cedo a tocar um instrumento chamado <i><b>eufônio</b></i> e desde então, sempre que posso, estou tocando ele.
             </p>
 
             </p>
