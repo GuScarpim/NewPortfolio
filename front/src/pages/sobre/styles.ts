@@ -30,7 +30,11 @@ export const Container = styled.div`
     }
 
     @media (max-width: 650px) {
-      padding: 50px 5px 0px 5px;
+      padding: 50px 15px 0px 15px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 50px 5px 0px 15px;
     }
 `
 
@@ -174,7 +178,8 @@ export const Description = styled.div`
     }
 
     @media (max-width: 650px) {
-      max-width: 87vw;
+      max-width: 89vw !important;
+      margin-left: 0px;
     }
 
     @media (max-width: 550px) {
