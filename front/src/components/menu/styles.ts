@@ -48,7 +48,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   background-color: #31363F;
   align-items: center;
-
+  position: relative;
 
   @media (max-width: 678px) {
     width: 100vw;
@@ -86,14 +86,29 @@ export const Nav = styled.nav`
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    display: flex;
+    justify-content: center;
 
     svg {
       position: relative;
       display: block;
-      width: calc(100% + 1.3px);
-      height: 80px;
+      /* width: calc(100% + 1.3px); */
+      min-height: 80px;
+      max-height: 80px;
+      min-width: 150% !important;
+      max-width: 100vw;
       transform: rotateY(180deg);
       fill: #31363f;
+
+      @media (max-width: 850px) {
+        min-width: 200% !important;
+        max-width: 200%;
+      }
+
+      @media (max-width: 500px) {
+        min-width: 300% !important;
+        max-width: 300%;
+      }
     }
 
   }

@@ -34,10 +34,15 @@ export const CardIcon = styled.div`
     margin-left: 0px;
   }
 
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &:hover {
     /* width: 38px;
     height: 38px; */
-
     svg {
       fill: #7DDFFF;
       width: 22px;
