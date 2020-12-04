@@ -1,9 +1,10 @@
 import React from 'react';
 import * as S from './styles';
 
+import HelloGif from '../../assets/hello.gif';
+import Musico from '../../assets/trompete.svg';
 import ReactIcon from '../../assets/react.svg';
 import Xadrez from '../../assets/xadrez.svg';
-import Musico from '../../assets/trompete.svg';
 
 import Footer from '../../components/footer/footer';
 import Icons from '../../components/icons/Icons';
@@ -14,36 +15,39 @@ export default function Sobre() {
     <>
       <S.Container>
         <S.Content>
-          <S.Perfil>
-            <img alt="Gustavo Scarpim"
-              src="https://avatars1.githubusercontent.com/u/47616551?s=460&u=f9f81df034252d349d5c631a85cd57ea603beefa&v=4" />
+          <S.ContentPerfil>
 
-            <label>Gustavo Scarpim</label>
+            <S.Perfil>
+              <img alt="Gustavo Scarpim"
+                src="https://avatars1.githubusercontent.com/u/47616551?s=460&u=f9f81df034252d349d5c631a85cd57ea603beefa&v=4" />
 
-            <S.Icons>
-              <Icons />
-            </S.Icons>
+              <label>Gustavo Scarpim</label>
 
-            <S.ContentMe>
-              <span>Desenvolvedor <b>Front End</b></span>
-              <img src={ReactIcon} alt="Icone React" />
-            </S.ContentMe>
+              <S.Icons>
+                <Icons />
+              </S.Icons>
 
-            <S.Skills>
-              <label>Minhas Skills</label>
-              <hr />
-              <Skills />
-            </S.Skills>
+              <S.ContentMe>
+                <span>Desenvolvedor <b>Front End</b></span>
+                <img src={ReactIcon} alt="Icone React" />
+              </S.ContentMe>
 
-          </S.Perfil>
+              <S.Skills>
+                <label>Minhas Skills</label>
+                <hr />
+                <Skills />
+              </S.Skills>
 
+            </S.Perfil>
+
+          </S.ContentPerfil>
           <S.Description>
-            <h2><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px" alt="Gif olá" /> Olá,
+            <h2><img src={HelloGif} width="28px" alt="Gif olá" /> Olá,
             meu nome é <b>Gustavo Scarpim</b>!
           </h2>
 
             <p>
-              Tenho 21 anos, moro na cidade de São Paulo - Capital, cursando o 6º semestre de <b>Ciência da Computação</b> na
+              Tenho 21 anos, moro na cidade de São Paulo - Capital, cursando o 6.º semestre de <b>Ciência da Computação</b> na
             Universidade Cruzeiro do Sul.
 
             <p>
@@ -81,7 +85,7 @@ export default function Sobre() {
 
             <p>
                 Além de estudar eu curto uma "partidinha" de <b>Xadrez</b> e já participei de diversos torneios.
-              Aprendi muito cedo a tocar um instrumento chamado <i><b>eufônio</b></i> e desde então, sempre que posso estou praticando e tocando ele.
+              Aprendi muito cedo a tocar um instrumento chamado <i><b>eufônio</b></i> e desde então, sempre que posso, estou tocando ele.
             </p>
 
             </p>

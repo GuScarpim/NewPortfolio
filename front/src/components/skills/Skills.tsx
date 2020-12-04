@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import * as S from './styles';
 
 import Angular from '../../assets/angular.svg';
+import Aws from '../../assets/aws.svg';
 import Azure from '../../assets/azure.svg';
 import Brave from '../../assets/brave.svg';
 import Bootstrap from '../../assets/bootstrap.svg';
-import Chrome from '../../assets/chrome.svg';
 import Cmd from '../../assets/cmd.svg';
 import Code from '../../assets/code.svg';
 import Css from '../../assets/css.svg';
@@ -21,10 +21,11 @@ import Mongo from '../../assets/mongo.svg';
 import Mysql from '../../assets/mysql.svg';
 import Node from '../../assets/node.svg';
 import Npm from '../../assets/npm.svg';
-import ReactIcon from '../../assets/react.svg';
+import ReactIcon from '../../assets/reactIcon.svg';
 import Redux from '../../assets/redux.svg';
 import Responsive from '../../assets/responsive.svg';
 import Sass from '../../assets/sass.svg';
+import Slack from '../../assets/slack.svg';
 import Sql from '../../assets/sql.svg';
 import Trello from '../../assets/trello.svg';
 import Typescript from '../../assets/typescript.svg';
@@ -48,7 +49,7 @@ export default function Skills() {
     { icons: Mysql, name: 'Mysql' }, { icons: Redux, name: 'Redux' }, { icons: Git, name: 'Git' }, { icons: GitHub, name: 'GitHub' }, { icons: Npm, name: 'Npm' },
     { icons: Yarn, name: 'Yarn' }, { icons: Ubuntu, name: 'Ubuntu' }, { icons: Linux, name: 'Linux' }, { icons: Windows, name: 'Windows' },
     { icons: Azure, name: 'Azure' }, { icons: Cmd, name: 'Cmd' }, { icons: Trello, name: 'Trello' }, { icons: Code, name: 'VS Code' },
-    { icons: Responsive, name: 'Responsive' }, { icons: Brave, name: 'Brave' },
+    { icons: Responsive, name: 'Responsive' }, { icons: Brave, name: 'Brave' }, { icons: Aws, name: 'AWS' }, { icons: Slack, name: 'Slack' },
   ])
 
   return (

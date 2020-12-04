@@ -25,8 +25,24 @@ export const Container = styled.div`
       position: relative;
       width: 95vw;
       padding: 50px 15px 0px 15px;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
+    @media (max-width: 650px) {
+      padding: 50px 5px 0px 5px;
     }
 `
+
+export const ContentPerfil = styled.div`
+  @media (max-width: 800px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+`
+
 
 export const Perfil = styled.div`
   background: #31363F;
@@ -155,5 +171,17 @@ export const Description = styled.div`
       margin-left: 0px;
       text-align: center;
       width: 94%;
+    }
+
+    @media (max-width: 650px) {
+      max-width: 87vw;
+    }
+
+    @media (max-width: 550px) {
+      max-width: 85vw;
+    }
+
+    @media (max-width: 360px) {
+      max-width: 82vw;
     }
 `

@@ -3,18 +3,18 @@ import styled from 'styled-components';
 interface Iclass {
   mobile?: '',
   width?: '',
+  color?: '',
 }
 
 export const Container = styled.div`
     font-family: 'Zilla Slab';
     color: #FFF;
-    padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 40px 20px 0px 20px;
+    padding: 80px 20px 0px 20px;
 `
 
 export const Card = styled.div<Iclass>`
@@ -33,7 +33,7 @@ export const Card = styled.div<Iclass>`
 
     -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    
+
     @-webkit-keyframes slide-left {
       0% {
         -webkit-transform: translateX(300px);
@@ -97,8 +97,8 @@ export const Card = styled.div<Iclass>`
 
   .div2 {
     grid-area: div2;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(214,217,211,1) 100%);
+    background:#212531;
+    background: linear-gradient(to right bottom, #15385E 50%, #76ABE3 50%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
@@ -230,8 +230,7 @@ export const CardReverse = styled.div<Iclass>`
     justify-content: center;
     padding: 50px 30px 50px 30px;
 
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(214,217,211,1) 100%);
+    background: linear-gradient(to right bottom, #76ABE3 50%, #15385E 50%);
 
     img {
       border-radius: 10px;
