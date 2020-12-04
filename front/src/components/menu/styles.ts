@@ -101,6 +101,7 @@ export const Nav = styled.nav`
       fill: #31363f;
 
       @media (max-width: 850px) {
+        display: none;
         min-width: 200% !important;
         max-width: 200%;
       }
