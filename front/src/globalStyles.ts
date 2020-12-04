@@ -36,8 +36,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0px;
     margin: 0px;
     background: #24292E;
-    overflow-x: hidden;
     overflow-y: auto;
+    overflow-x: auto;
+
+    @media (max-width: 800px){
+      overflow-x: hidden;
+    }
+
   }
 `
 
