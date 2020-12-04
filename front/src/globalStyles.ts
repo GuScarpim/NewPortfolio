@@ -36,6 +36,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0px;
     margin: 0px;
     background: #24292E;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 `
 

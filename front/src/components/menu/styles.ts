@@ -44,11 +44,15 @@ export const StyledBurger = styled.div<INav>`
 export const Nav = styled.nav`
   font-family: 'Zilla Slab';
   height: 70px;
-  border-bottom: 2px solid #ffffff;
   display: flex;
   justify-content: space-between;
   background-color: #31363F;
   align-items: center;
+
+
+  @media (max-width: 678px) {
+    width: 100vw;
+  }
 
   span {
     font-size: 30px;
@@ -65,7 +69,6 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 95vw;
     color: #FFF;
 
     span {
@@ -74,6 +77,25 @@ export const Nav = styled.nav`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  }
+
+  .custom-shape {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 80px;
+      transform: rotateY(180deg);
+      fill: #31363f;
+    }
+
   }
 `
 
@@ -113,8 +135,8 @@ export const Ul = styled.ul<INav>`
     }
 
     .LinkProjetos {
-      border-bottom: ${(props) => props.href === 'projetos' || props.href ===  '/projetos' ? '4px solid #64d2f2' : ''};
-      color: ${(props) => props.href === 'projetos' || props.href ===  '/projetos' ? '#64d2f2' : ''};
+      border-bottom: ${(props) => props.href === 'projetos' || props.href === '/projetos' ? '4px solid #64d2f2' : ''};
+      color: ${(props) => props.href === 'projetos' || props.href === '/projetos' ? '#64d2f2' : ''};
     }
 
   button {

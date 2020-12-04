@@ -14,29 +14,32 @@ export default function Sobre() {
     <>
       <S.Container>
         <S.Content>
-          <S.Perfil>
-            <img alt="Gustavo Scarpim"
-              src="https://avatars1.githubusercontent.com/u/47616551?s=460&u=f9f81df034252d349d5c631a85cd57ea603beefa&v=4" />
+          <S.ContentPerfil>
 
-            <label>Gustavo Scarpim</label>
+            <S.Perfil>
+              <img alt="Gustavo Scarpim"
+                src="https://avatars1.githubusercontent.com/u/47616551?s=460&u=f9f81df034252d349d5c631a85cd57ea603beefa&v=4" />
 
-            <S.Icons>
-              <Icons />
-            </S.Icons>
+              <label>Gustavo Scarpim</label>
 
-            <S.ContentMe>
-              <span>Desenvolvedor <b>Front End</b></span>
-              <img src={ReactIcon} alt="Icone React" />
-            </S.ContentMe>
+              <S.Icons>
+                <Icons />
+              </S.Icons>
 
-            <S.Skills>
-              <label>Minhas Skills</label>
-              <hr />
-              <Skills />
-            </S.Skills>
+              <S.ContentMe>
+                <span>Desenvolvedor <b>Front End</b></span>
+                <img src={ReactIcon} alt="Icone React" />
+              </S.ContentMe>
 
-          </S.Perfil>
+              <S.Skills>
+                <label>Minhas Skills</label>
+                <hr />
+                <Skills />
+              </S.Skills>
 
+            </S.Perfil>
+
+          </S.ContentPerfil>
           <S.Description>
             <h2><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px" alt="Gif olá" /> Olá,
             meu nome é <b>Gustavo Scarpim</b>!

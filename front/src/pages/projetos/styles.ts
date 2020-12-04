@@ -8,13 +8,12 @@ interface Iclass {
 export const Container = styled.div`
     font-family: 'Zilla Slab';
     color: #FFF;
-    padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 40px 20px 0px 20px;
+    padding: 80px 20px 0px 20px;
 `
 
 export const Card = styled.div<Iclass>`
@@ -33,7 +32,7 @@ export const Card = styled.div<Iclass>`
 
     -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    
+
     @-webkit-keyframes slide-left {
       0% {
         -webkit-transform: translateX(300px);
