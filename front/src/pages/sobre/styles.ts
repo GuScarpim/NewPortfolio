@@ -34,7 +34,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: 600px) {
-      padding: 50px 5px 0px 15px;
+      padding: 50px 0px 0px 9px;
     }
 `
 
@@ -47,6 +47,19 @@ export const ContentPerfil = styled.div`
   }
 `
 
+export const ContentDescription = styled.div`
+   max-width: 800px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    justify-content: center;
+    overflow: hidden !important;
+  }
+`
 
 export const Perfil = styled.div`
   background: #31363F;
