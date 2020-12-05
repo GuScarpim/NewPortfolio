@@ -68,8 +68,7 @@ export default function Sobre() {
 
             <p>
                   No estágio eu trabalhei com desenvolvimento <b>Front-End e Backend</b>, utilizando as liguanges ReactJs, NodeJs, Javascript, C#,
-              .Net Core, SQL e Mongo DB. As minhas principais atividades dentro da empresa eram criar <b>sistemas web</b> para melhorias na parte
-              interna de dentro da empresa.
+              .Net Core, SQL e Mongo DB. As minhas principais atividades dentro da empresa eram criar <b>sistemas web</b> para melhorias internas da empresa.
             </p>
 
                 <p>
