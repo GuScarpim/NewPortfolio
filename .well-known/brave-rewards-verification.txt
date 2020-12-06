@@ -1,2 +1,2 @@
 Domain: gustavoscarpim.com
-Token: 6c4effdfbd3d830223ba4e3230577fecf1471d2c17f950a0429d1d585138a4ef
+Token: 496078cf3bdf7dd9c2eeae3ac1723f3df6562daa1c29a7a3bd12d8bf065503de
