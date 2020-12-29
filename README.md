@@ -1,3 +1,1 @@
-# Novo Portfolio 
-
-# <a href="https://www.gustavoscarpim.com/">Clique aqui para acessar!</a>
+# Portfolio temporariamente fora do ar, em breve irei subir novamente.
