@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: gustavoscarpim.com
-Token: 496078cf3bdf7dd9c2eeae3ac1723f3df6562daa1c29a7a3bd12d8bf065503de
