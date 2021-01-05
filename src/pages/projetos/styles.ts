@@ -84,6 +84,7 @@ export const Card = styled.div<Iclass>`
       color: #64d2f2;
       display: flex;
       align-items: center;
+      max-width: 100px;
 
       svg {
         margin: 4px 0px 0px 8px;
@@ -270,6 +271,7 @@ export const CardReverse = styled.div<Iclass>`
       color: #64d2f2;
       display: flex;
       align-items: center;
+      max-width: 100px;
 
       svg {
         margin: 4px 0px 0px 8px;
