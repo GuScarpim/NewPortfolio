@@ -11,6 +11,7 @@ import Code from '../../assets/code.svg';
 import Css from '../../assets/css.svg';
 import Git from '../../assets/git.svg';
 import GitHub from '../../assets/github.svg';
+import Heroku from '../../assets/heroku.svg';
 import Html from '../../assets/html.svg';
 import Java from '../../assets/java.svg';
 import Javascript from '../../assets/javascript.svg';
@@ -19,7 +20,9 @@ import Material from '../../assets/material.svg';
 import Materialize from '../../assets/materialize.svg';
 import Mongo from '../../assets/mongo.svg';
 import Mysql from '../../assets/mysql.svg';
+import Netlify from '../../assets/netlify.svg';
 import Node from '../../assets/node.svg';
+import Next from '../../assets/next.svg';
 import Npm from '../../assets/npm.svg';
 import ReactIcon from '../../assets/reactIcon.svg';
 import Redux from '../../assets/redux.svg';
@@ -43,13 +46,14 @@ export default function Skills() {
 
   const [skills, setSkills] = useState<Ifigure[]>([
     { icons: ReactIcon, name: 'ReactJs' }, { icons: Typescript, name: 'TypeScript' }, { icons: Html, name: 'Html' }, { icons: Css, name: 'Css' },
-    { icons: Javascript, name: 'Javascript' }, { icons: Bootstrap, name: 'Bootstrap' }, { icons: Materialize, name: 'Materialize' },
+    { icons: Javascript, name: 'Javascript' }, { icons: Next, name: 'NextJS' }, { icons: Bootstrap, name: 'Bootstrap' }, { icons: Materialize, name: 'Materialize' },
     { icons: Material, name: 'Material Ui' }, { icons: Sass, name: 'Sass' }, { icons: Node, name: 'NodeJs' }, { icons: Angular, name: 'AngularJs' },
     { icons: Vue, name: 'VueJs' }, { icons: Java, name: 'Java' }, { icons: Sql, name: 'SQL' }, { icons: Mongo, name: 'Mongo DB' },
     { icons: Mysql, name: 'Mysql' }, { icons: Redux, name: 'Redux' }, { icons: Git, name: 'Git' }, { icons: GitHub, name: 'GitHub' }, { icons: Npm, name: 'Npm' },
     { icons: Yarn, name: 'Yarn' }, { icons: Ubuntu, name: 'Ubuntu' }, { icons: Linux, name: 'Linux' }, { icons: Windows, name: 'Windows' },
-    { icons: Azure, name: 'Azure' }, { icons: Cmd, name: 'Cmd' }, { icons: Trello, name: 'Trello' }, { icons: Code, name: 'VS Code' },
-    { icons: Responsive, name: 'Responsive' }, { icons: Brave, name: 'Brave' }, { icons: Aws, name: 'AWS' }, { icons: Slack, name: 'Slack' },
+    { icons: Azure, name: 'Azure' }, { icons: Heroku, name: 'Heroku' }, { icons: Netlify, name: 'Netlify' }, 
+    { icons: Aws, name: 'AWS' }, { icons: Cmd, name: 'Cmd' }, { icons: Trello, name: 'Trello' }, { icons: Code, name: 'VS Code' },
+    { icons: Responsive, name: 'Responsive' }, { icons: Brave, name: 'Brave' }, { icons: Slack, name: 'Slack' },
   ])
 
   return (
