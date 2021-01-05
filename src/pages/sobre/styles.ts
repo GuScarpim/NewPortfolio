@@ -68,7 +68,7 @@ export const Perfil = styled.div`
   border-radius: 20px;
   margin-top: -100px;
   padding: 20px;
-  max-height: 1200px;
+  max-height: 1240px;
 
   img {
     width: 260px;
