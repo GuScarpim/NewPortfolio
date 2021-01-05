@@ -19,7 +19,7 @@ function Projetos() {
   const [href, setHref] = useState<string>("");
   const [projects, setProjects] = useState<Iproject[]>([
     {
-      title: 'Sempre IT - Front',
+      title: 'IT Forever - Front',
       description: 'Projeto desenvolvido para realizar um teste da empresa <b>Sempre IT</b>, o desafio era criar um CRUD com autenticação completo, foi utilizado <b>ReactJS</b>, <b>Typescript</b>, <b>Styled Components</b> para desenvolver o <b>front</b>, e <b>NodeJS</b> com <b>Mysql</b> para fazer a <b>API</b>.',
       linkGithub: 'https://github.com/GuScarpim/IT-Forever',
       linkProjeto: 'https://github.com/GuScarpim/IT-Forever',
@@ -28,7 +28,7 @@ function Projetos() {
       reverse: false,
     },
     {
-      title: 'Sempre IT - Back',
+      title: 'IT Forever - Back',
       description: 'Backend do projeto <b>Sempre IT</b>. Nesse projeto foi desenvolvido uma <b>API</b> para integrar com o meu front. Desenvolvi um <b>CRUD</b> com validação e autorização utilizando <b>JWT</b>, <b>NodeJS</b>, <b>Javascript</b> e persistindo os dados no banco <b>Mysql</b>.',
       linkGithub: 'https://github.com/GuScarpim/IT-Forever-Back',
       linkProjeto: 'https://github.com/GuScarpim/IT-Forever-Back',
