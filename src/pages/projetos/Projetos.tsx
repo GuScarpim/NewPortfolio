@@ -4,6 +4,7 @@ import * as S from './styles';
 
 import Footer from '../../components/footer/footer';
 import HrefContext from '../../context/Href';
+import EtiosGif from '../../assets/etios.gif';
 
 interface Iproject {
   title: string,
@@ -12,12 +13,23 @@ interface Iproject {
   linkProjeto?: string,
   linkGif: string,
   reverse: boolean,
+  code: boolean,
   width: any,
 }
 
 function Projetos() {
   const [href, setHref] = useState<string>("");
   const [projects, setProjects] = useState<Iproject[]>([
+    {
+      title: 'Etio Soluções',
+      description: 'Site desenvolvido para a empresa Etio Soluções.',
+      linkGithub: 'https://etiosolucoes.netlify.app/',
+      linkProjeto: 'https://etiosolucoes.netlify.app/',
+      linkGif: EtiosGif,
+      width: '',
+      reverse: true,
+      code: false
+    },
     {
       title: 'IT Forever - Front',
       description: 'Projeto desenvolvido para realizar um teste da empresa <b>Sempre IT</b>, o desafio era criar um CRUD com autenticação completo, foi utilizado <b>ReactJS</b>, <b>Typescript</b>, <b>Styled Components</b> para desenvolver o <b>front</b>, e <b>NodeJS</b> com <b>Mysql</b> para fazer a <b>API</b>.',
@@ -26,6 +38,7 @@ function Projetos() {
       linkGif: 'https://github.com/GuScarpim/IT-Forever/blob/main/src/Assets/IT_forever.gif?raw=true',
       width: '',
       reverse: false,
+      code: true
     },
     {
       title: 'IT Forever - Back',
@@ -35,6 +48,7 @@ function Projetos() {
       linkGif: 'https://github.com/GuScarpim/IT-Forever/raw/main/src/Assets/IT_foreverMobile.gif',
       width: '250',
       reverse: true,
+      code: true
     },
     {
       title: 'Meu primeiro Portfólio',
@@ -44,6 +58,7 @@ function Projetos() {
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Portfolio/master/src/assets/portfolio.gif',
       width: '',
       reverse: false,
+      code: true
     },
     {
       title: 'Clone do WhatsApp',
@@ -53,6 +68,7 @@ function Projetos() {
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Clone_WhatsApp/main/front/src/Assets/gif.gif',
       width: '',
       reverse: true,
+      code: true
     },
     {
       title: 'Buscar Cep React',
@@ -62,6 +78,7 @@ function Projetos() {
       linkGif: 'https://user-images.githubusercontent.com/47616551/73510308-742b5480-43c0-11ea-995e-cfed2c876874.gif',
       width: '',
       reverse: false,
+      code: true
     },
     {
       title: 'Filmes KRS',
@@ -71,6 +88,7 @@ function Projetos() {
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Filmes_KRS/master/web/src/assets/locadora.gif',
       width: '',
       reverse: true,
+      code: true
     },
     {
       title: 'Private Route React',
@@ -80,6 +98,7 @@ function Projetos() {
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/React-Login-PrivateRoute/master/myapp/src/img/ReactLoginGuScarpim.gif',
       width: '',
       reverse: false,
+      code: true
     },
     {
       title: 'Vue Search Repos',
@@ -89,6 +108,7 @@ function Projetos() {
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Vue_Search_Repos/master/src/assets/vue.gif',
       width: '',
       reverse: true,
+      code: true
     },
     {
       title: '.Net Core API - AD Group',
@@ -98,6 +118,7 @@ function Projetos() {
       linkGif: 'https://guscarpim.github.io/Portfolio/static/media/api.b92871a7.gif',
       width: '',
       reverse: false,
+      code: true
     },
     {
       title: 'Buscar Cep React Native',
@@ -107,6 +128,7 @@ function Projetos() {
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Consulta-CEP-React-Native/master/src/img/ReactNativeCep_GustavoScarpim.gif',
       width: '250',
       reverse: true,
+      code: true
     },
     {
       title: 'Next Google',
@@ -116,6 +138,7 @@ function Projetos() {
       linkGif: 'https://raw.githubusercontent.com/GuScarpim/Next_Google_Route_Private/master/public/images/next_google.gif',
       width: '',
       reverse: false,
+      code: true
     },
   ]);
 
@@ -165,7 +188,8 @@ function Projetos() {
                   <span dangerouslySetInnerHTML={{ __html: item.description }} >
                   </span>
                   <a href={item.linkGithub} target="_blank">
-                    Ver código
+                    {item.code ? 'Ver código' : 'Ver site'}
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                       <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z" />
                     </svg>
