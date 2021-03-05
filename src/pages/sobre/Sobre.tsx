@@ -75,7 +75,12 @@ export default function Sobre() {
                   No fim do meu estágio em 2020, fui para uma agência publicitária chamada <b>Hyst</b> também do ramo financeiro, atuando como
               <b> Desenvolvedor Front-End Jr.</b>, as linguagens que eu utilizo na <b>Hyst</b> são ReactJs, VueJs, NextJs, Sass, Redux,
                e também acumulei diversas skills de <b>Front-End</b> e <b>UX Design</b>.
-            </p>
+              </p>
+
+              <p>
+                  Em <b>2021</b> tive a oportunidade de estar atuando como <b>desenvolvedor Front-End Pleno</b> na empresa <b>Evnts</b> do ramo de eventos,
+                  nessa empresa eu trabalho com ReactJs dando manutenção e desenvolvendo novas melhorias no sistema da empresa.
+              </p>
               </p>
 
               <h2>Curiosidades e Hobbies</h2>
