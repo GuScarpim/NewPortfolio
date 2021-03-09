@@ -51,6 +51,16 @@ function Projetos() {
       code: true
     },
     {
+      title: 'Upload de imagem Base64',
+      description: 'Projeto desenvolvido em <b>React</b> e <b>Typescript</b> para mostrar como fazer um upload de imagem no formato base64 que é geralmente usado quando se trata de upload.',
+      linkGithub: 'https://github.com/GuScarpim/upload-image-react-base64',
+      linkProjeto: 'https://guscarpim.github.io/upload-image-react-base64/',
+      linkGif: 'https://github.com/GuScarpim/upload-image-react-base64/raw/main/front/src/assets/upload.gif',
+      width: '',
+      reverse: false,
+      code: true
+    },
+    {
       title: 'Meu primeiro Portfólio',
       description: 'Esse foi o meu primeiro portfólio desenvolvido para mostrar o meu trabalho e falar um pouco sobre mim. O portfólio foi desenvolvido utilizando as linguagens <b>ReactJS</b> com <b>Styled Components</b>.',
       linkGithub: 'https://github.com/GuScarpim/Portfolio',
